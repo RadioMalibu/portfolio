@@ -57,9 +57,11 @@ class ColumnRight extends React.Component {
     return (
       <div>
         <div className="previous-block" onClick={this.onPrevious}>
-          <img className={imgClass.join(' ')} src={require(`../../images/${this.props.image.url}`)} alt={this.props.image.alt} />
+          <div className="prev-block-cut">
+            <img className={imgClass.join(' ')} src={require(`../../images/${this.props.image[0].url}`)} alt={this.props.image[0].alt} />
+          </div>
           <div className={prevClass.join(' ')}>
-            <img src={require(`../../images/${this.props.image.url}`)} alt={this.props.image.alt} />
+            <img src={require(`../../images/${this.props.image[0].url}`)} alt={this.props.image[0].alt} />
           </div>
         </div>
         <div>

@@ -14,7 +14,7 @@ class ImageBlock extends React.Component {
 
     return (
       <div className={boxClass.join(' ')}>
-        <img src={require(`../../images/${this.props.img.url}`)} alt={this.props.img.alt} />
+        <img src={require(`../../images/${this.props.img[0].url}`)} alt={this.props.img[0].alt} />
       </div>
     )
   }

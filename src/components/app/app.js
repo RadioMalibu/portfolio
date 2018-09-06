@@ -45,6 +45,7 @@ class App extends React.Component {
 
   setDirection = () => {
     let setPortfolio = this.getPortfolio().length;
+
     let indexNext = this.state.image + 1;
     let indexNextCorner = indexNext + 1
     let indexPrev = this.state.image - 1;

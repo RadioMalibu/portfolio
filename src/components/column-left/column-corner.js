@@ -22,7 +22,7 @@ class ColumnLeftCorner extends React.Component {
 
     return (
       <div className={prevClass.join(' ')}>
-        <img src={require(`../../images/${this.props.image.url}`)} alt={this.props.image.alt} />
+        <img src={require(`../../images/${this.props.image[0].url}`)} alt={this.props.image[0].alt} />
       </div>
     )
   }

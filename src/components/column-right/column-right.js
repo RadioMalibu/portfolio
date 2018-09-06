@@ -41,9 +41,11 @@ class ColumnRight extends React.Component {
           </div>
         </div>
         <div className="next-block" onClick={this.onNext}>
-          <img className={imageClass.join(' ')} src={require(`../../images/${this.props.image.url}`)} alt={this.props.image.alt} />
+          <div className="next-block-cut">
+            <img className={imageClass.join(' ')} src={require(`../../images/${this.props.image[0].url}`)} alt={this.props.image[0].alt} />
+          </div>
           <div className={boxClass.join(' ')}>
-            <img src={require(`../../images/${this.props.image.url}`)} alt={this.props.image.alt} />
+            <img src={require(`../../images/${this.props.image[0].url}`)} alt={this.props.image[0].alt} />
           </div>
         </div>
       </div>
