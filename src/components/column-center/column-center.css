@@ -196,7 +196,7 @@ img{
     top:50%;
     margin-top:100px;
     left:0;
-    overflow:auto;
+    overflow:scroll;
     -webkit-transition: height 1s 0ms, width 1s 0ms, top 1s 0s;
     transition: height 1s 0ms, width 1s 0ms, top 1s 0s;
   }

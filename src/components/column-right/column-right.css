@@ -137,7 +137,7 @@
     width:180%;
     height:50%;
     position:absolute;
-    overflow: auto;
+    overflow: scroll;
     top:50%;
     margin-top:350px;
     left:-100%;
