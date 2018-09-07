@@ -79,6 +79,10 @@ h3{
   .body-content{
     background-color: #fff;
   }
+  .strong i{
+    font-weight: 100;
+    margin-top: 10px;
+  }
   .left-column,
   .right-column{
     width:90%;
