@@ -2,7 +2,7 @@
   "name": "react-starter",
   "version": "1.3.1",
   "private": true,
-  "homepage": "https://RadioMalibu.github.io/portfolio-brian",
+  "homepage": "https://RadioMalibu.github.io/portfolio-brk",
   "dependencies": {
     "eslint-config-technigo": "^1.5.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
