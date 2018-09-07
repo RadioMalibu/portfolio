@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   setGlobalSection = (section) => {
-    if(section == "Portfolio" || section == "Webb"){
+    if(section === "Portfolio" || section === "Webb"){
       this.setState({
         portfolio: section,
         section: ""
@@ -35,9 +35,9 @@ class App extends React.Component {
 
   getPortfolio = () => {
     let portfolio;
-    if(this.state.portfolio == "Portfolio"){
+    if(this.state.portfolio === "Portfolio"){
       portfolio = Portfolio.getAll();
-    }else if(this.state.portfolio == "Webb"){
+    }else if(this.state.portfolio === "Webb"){
       portfolio = Webb.getAll();
     }
     return portfolio;
@@ -71,8 +71,8 @@ class App extends React.Component {
     });
 
     setTimeout(() => {
-      if(dir == "next"){
-        if(this.state.image == this.getPortfolio().length - 1){
+      if(dir === "next"){
+        if(this.state.image === this.getPortfolio().length - 1){
           this.setState({
             image : 0
           })
@@ -83,8 +83,8 @@ class App extends React.Component {
         }
       }
 
-      if(dir == "prev"){
-        if(this.state.image == 0){
+      if(dir === "prev"){
+        if(this.state.image === 0){
           this.setState({
             image : this.getPortfolio().length - 1
           })
@@ -105,20 +105,21 @@ class App extends React.Component {
       <div className="body-content">
         <div className="left-column">
           {this.getPortfolio().map((port, index) => {
-            if(this.setDirection()[2] == index){
+            if(this.setDirection()[2] === index){
               return(<ColumnLeft
+                key={index}
                 onPreviousClick={() => this.addClass("prev")}
                 onMove={this.state.addClass}
                 image = {port.image}
-                text = {port.description}
                 onSetSection={(section) => this.setGlobalSection(section)}
                 portfolio = {this.state.portfolio}
               />)
             }
           })}
           {this.getPortfolio().map((port, index) => {
-            if(this.setDirection()[3] == index){
+            if(this.setDirection()[3] === index){
               return(<ColumnLeftCorner
+                key={index}
                 onPrevClick={() => this.addClass("next")}
                 onMove={this.state.addClass}
                 image = {port.image}
@@ -128,12 +129,14 @@ class App extends React.Component {
         </div>
         <div className="center-column">
           {this.getPortfolio().map((port, index) => {
-            if(this.state.image == index){
+            if(this.state.image === index){
               return(<ColumnCenter
                 key={index}
                 id={port.id}
                 title={port.title}
-                description = {port.description}
+                text = {port.description}
+                tags = {port.tags}
+                link = {port.link}
                 image = {port.image}
                 onMove = {this.state.addClass}
               />)
@@ -142,8 +145,9 @@ class App extends React.Component {
         </div>
         <div className="right-column">
           {this.getPortfolio().map((port, index) => {
-            if(this.setDirection()[0] == index){
+            if(this.setDirection()[0] === index){
               return(<ColumnRight
+                key={index}
                 onNextClick={() => this.addClass("next")}
                 onMove={this.state.addClass}
                 image = {port.image}
@@ -152,8 +156,9 @@ class App extends React.Component {
             }
           })}
           {this.getPortfolio().map((port, index) => {
-            if(this.setDirection()[1] == index){
+            if(this.setDirection()[1] === index){
               return(<ColumnRightCorner
+                key={index}
                 onNextClick={() => this.addClass("next")}
                 onMove={this.state.addClass}
                 image = {port.image}

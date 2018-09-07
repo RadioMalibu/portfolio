@@ -16,7 +16,7 @@ class TextBlock extends React.Component {
 
   createCounter = (img) => {
     let table = []
-    let width = (90 / img);
+    let width = (80 / img);
 
     for(let i = 0; i < img; i++){
       table.push(<div className={`counter ${this.state.active === "div"+ i? 'current': ''}`} id={"div"+ i } onClick={this.swapImage} style={{width:width + "%"}} key={i}></div>)

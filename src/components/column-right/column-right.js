@@ -4,9 +4,9 @@ import './column-right.css';
 
 class ColumnRight extends React.Component {
   onNext = () => {
-    if(this.props.onMove == "next"){
+    if(this.props.onMove === "next"){
       return
-    }else if(this.props.onMove == ""){
+    }else if(this.props.onMove === ""){
       this.props.onNextClick()
     }
   }
@@ -17,17 +17,17 @@ class ColumnRight extends React.Component {
     let imageClass = ["next-image"];
     let aboutClass = ["about-contact-block-content"];
 
-    if(this.props.onMove == "next"){
+    if(this.props.onMove === "next"){
       boxClass.push('transNext show');
       nextClass.push('transNext show');
       imageClass.push('none');
-    }else if(this.props.onMove == "prev"){
+    }else if(this.props.onMove === "prev"){
       boxClass.push('transPrev show');
       nextClass.push('transPrev ');
       imageClass.push('none');
     }
 
-    if(this.props.section != ""){
+    if(this.props.section !== ""){
       aboutClass.push('open');
     }else{
       aboutClass.push('close');

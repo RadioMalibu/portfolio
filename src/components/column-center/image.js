@@ -6,9 +6,9 @@ import './column-center.css';
 class ImageBlock extends React.Component {
   render(){
     let boxClass = ["image-block-center"];
-      if(this.props.move == "next") {
+      if(this.props.move === "next") {
         boxClass.push('transNext show');
-      }else if(this.props.move == "prev"){
+      }else if(this.props.move === "prev"){
         boxClass.push('transPrev show')
       }
 

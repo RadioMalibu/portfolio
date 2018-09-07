@@ -4,9 +4,9 @@ import './column-right.css';
 
 class ColumnRightCorner extends React.Component {
   onNext = () => {
-    if(this.props.onMove == "next"){
+    if(this.props.onMove === "next"){
       return
-    }else if(this.props.onMove == ""){
+    }else if(this.props.onMove === ""){
       this.props.onNextClick()
     }
   }
@@ -14,9 +14,9 @@ class ColumnRightCorner extends React.Component {
   render(){
     let nextClass = ["next-block-next"];
 
-    if(this.props.onMove == "next"){
+    if(this.props.onMove === "next"){
       nextClass.push('transNext show');
-    }else if(this.props.onMove == "prev"){
+    }else if(this.props.onMove === "prev"){
       nextClass.push('transPrev ');
     }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './column-left.css';
 
@@ -12,11 +11,10 @@ class Navigation extends React.Component {
     let Portfolio = this.props.portfolio;
     let graphic = ['graphic'];
     let webb = ['webb'];
-    let about = ['about'];
 
-    if(Portfolio == "Portfolio"){
+    if(Portfolio === "Portfolio"){
       graphic.push('current');
-    }else if(Portfolio == "Webb"){
+    }else if(Portfolio === "Webb"){
       webb.push('current');
     }
 
