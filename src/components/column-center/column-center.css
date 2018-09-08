@@ -105,7 +105,7 @@ img{
   left:25%;
   z-index: 100;
   background-color:#252525;
-  overflow: hidden;
+  overflow: auto;
   -webkit-transition: height 1s 0ms, width 1s 0ms, top 1s 0s, left 1s 0s;
   transition: height 1s 0ms, width 1s 0ms, top 1s 0s, left 1s 0s;
 }
@@ -184,6 +184,7 @@ img{
     height:10px;
     float:none;
     margin: 10px;
+    margin-top:25px;
     text-align: center;
   }
   .content-text-block{
@@ -202,6 +203,7 @@ img{
   }
   .text-block-section p{
     padding:50px;
+    padding-left:60px;
     opacity:0;
     -webkit-transition: opacity 200ms 0s;
     transition: opacity 200ms 0s;
