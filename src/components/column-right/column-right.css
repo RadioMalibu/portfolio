@@ -58,7 +58,7 @@
   width:25%;
   height:75%;
   position:absolute;
-  overflow: hidden;
+  overflow: auto;
   top:0;
 }
 .about-contact-block-content{
@@ -137,7 +137,7 @@
     width:180%;
     height:50%;
     position:absolute;
-    overflow: scroll;
+    overflow: auto;
     top:50%;
     margin-top:260px;
     left:-100%;
