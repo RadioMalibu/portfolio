@@ -14,7 +14,7 @@ class AboutContent extends React.Component{
           Photoshop | Illustrator | Indesign | Adobe XD | Premiere Pro | After Effects | Unity | HTML5 | CSS3 | JavaScript | JQuery | C# | .Net MVC | React
         </p>
         <div className="line"></div>
-        <h3>Drop a line</h3>
+        <h3>Hello! Is it me you're looking for?</h3>
         <ul className="contact-list">
           <li>Email: brian.koudijs@icloud.com</li>
         </ul>
