@@ -9,6 +9,8 @@ class AboutContent extends React.Component{
         <h3>Brian Koudijs</h3>
         <p>
           My name is Brian and I am a web developer, UI/UX designer and graphic designer. I have a masters degree in Interaction Design from the Technical University in Delft (The Netherlands).
+          <br/>
+          I ran my own Graphic design and Webdevelopment company (Wåning:ett) for a few years after which I did a course in .Net programming. I have been working as a Front-end developer at Virtusa AB for the pas 2,5 years.
         </p>
         <p className="strong">
           Photoshop | Illustrator | Indesign | Adobe XD | Premiere Pro | After Effects | Unity | HTML5 | CSS3 | JavaScript | JQuery | C# | .Net MVC | React
