@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 .current{
-  background-color:#252525;
+  background-color:#2d1629;
   color:#fff;
 }
 .show{
@@ -86,7 +86,7 @@
     height:20px;
     top:50%;
     margin-top:200px;
-    background-color: #252525;
+    background-color: #452c46;
     z-index: 200;
     padding:10px 0;
     text-align: center;

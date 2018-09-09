@@ -18,7 +18,7 @@ class AboutContent extends React.Component{
         <div className="line"></div>
         <h3>Hello! Is it me you're looking for?</h3>
         <ul className="contact-list">
-          <li>Email: brian.koudijs@icloud.com</li>
+          <li>brian.koudijs@icloud.com</li>
         </ul>
       </div>
     )

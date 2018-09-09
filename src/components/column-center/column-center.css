@@ -76,16 +76,16 @@ img{
   text-align: right;
 }
 .counter{
-  background-color: #a1a1a1;
+  background-color: #dcd6df;
   height: 100%;
   margin-right: 10px;
   display: inline-block;
 }
 .counter.current{
-  background-color: #252525;
+  background-color: #7e5784;
 }
 .content-text-block{
-  background-color: #252525;
+  background-color: #94a655;
   width:50px;
   height:50px;
   top:75%;
@@ -104,7 +104,7 @@ img{
   position: absolute;
   left:25%;
   z-index: 100;
-  background-color:#252525;
+  background-color:#452c46;
   overflow: auto;
   -webkit-transition: height 1s 0ms, width 1s 0ms, top 1s 0s, left 1s 0s;
   transition: height 1s 0ms, width 1s 0ms, top 1s 0s, left 1s 0s;
@@ -139,7 +139,7 @@ img{
     height:50%;
     width:100%;
     top:100px;
-    border-top:solid 2px #252525;
+    border-top:solid 2px #94a655;
     margin-top:10px;
     padding-top:10px;
   }
@@ -191,7 +191,7 @@ img{
     top:50%;
     margin-top:100px;
     left:0;
-    background-color: #a1a1a1;
+    background-color: #94a655;
   }
   .text-block-section{
     top:50%;
