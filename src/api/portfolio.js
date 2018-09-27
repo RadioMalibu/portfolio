@@ -36,8 +36,8 @@ const portfolio = [
   {
     id: 'Monty',
     title: "Monty's Glow",
-    description: 'Dit is een hele mooie foto LEVE DE KONING',
-    tags: "WordPress | PHP | Web Design",
+    description: "The newly started skincare company ordered labels for their products. The labels were meant to show the founder's heritage and the hand-made character of the products.",
+    tags: "Graphic Design | Package Design | Illustrator | Photoshop",
     link: "",
     image:[{
       url: 'monty2.jpg',
